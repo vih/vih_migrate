@@ -1,0 +1,9 @@
+name = VIH Migrate
+description = Provides VIH-specific Migrate handlers and base migrations.
+package = VIH
+core = 7.x
+dependencies[] = migrate
+dependencies[] = commerce_migrate
+
+files[] = vih_migrate.migrate.inc
+files[] = plugins/destinations/fields.inc
