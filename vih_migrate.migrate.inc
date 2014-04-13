@@ -39,7 +39,7 @@ class VIHPages extends VIHMigration {
     // Create a MigrateSource object.
     $this->source = new MigrateSourceCSV(drupal_get_path('module', 'vih_migrate') . '/import/pages.csv', $this->csvcolumns(), array('header_rows' => 1));
 
-    $this->destination = new MigrateDestinationNode('page');
+    $this->destination = new MigrateDestinationNode('panopoly_page');
 
     $this->addFieldMapping('nid', 'nid');
     $this->addFieldMapping('title', 'title');
